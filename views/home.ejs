@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style/style.css">
+</head>
+<body>
+    <img src="/image/labu.png" alt="labuuuu" width="500px" >
+
+    <h1>hello word</h1>
+    <form action="/secret" method="post">
+        <label for="harga">harga :</label>
+        <input type="number" id="harga" name="harga">
+        <button type="submit">
+            Submit
+        </button>
+    </form>
+
+    <form action="/slot" method="get">
+        <button type="submit">
+            click here
+        </button>
+    </form><br><br><br>
+
+    <form action="/tambah" method="POST">
+        <label for="angka1">Angka pertama</label>
+        <input type="number" id="angka1" name="angka1" required>
+    
+        <label for="angka2">Angka kedua</label>
+        <input type="number" id="angka2" name="angka2" required>
+    
+        <button type="submit">
+            Click
+        </button>
+    </form>
+    
+    <% if (locals.error) { %>
+        <p style="color: red;">Error</p>
+    <% } else if (locals.hasil) { %>
+        <p>Hasil: <%= hasil %></p>
+    <% } %>
+       
+    
+
+</body>
+</html>
